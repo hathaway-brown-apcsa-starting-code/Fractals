@@ -8,7 +8,7 @@
  */
 public class JuliaSet
 {
-    public static final int MAX_ITERATIONS = 100;
+    public static final int MAX_ITERATIONS = 127;
     public static final double MIN_REAL = -1.0;
     public static final double MAX_REAL =  1.0;
     public static final double MIN_IMAG = -1.0;
@@ -40,7 +40,7 @@ public class JuliaSet
         
         Picture jSet = new Picture (rows, cols);
         Pixel[][] pixels = jSet.getPixels2D();
-        ColorMap colors = new ColorMap();
+        ColorMap colors = new LinearColorMap();
         
         for (int r = 0; r < rows; r++)
         {
